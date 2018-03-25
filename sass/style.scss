@@ -21,6 +21,8 @@ nav{
         cursor:pointer;
         :hover{
             opacity:0.5;
+            -webkit-transition:.3s;
+            -o-transition:.3s;
             transition:.3s;
         }
     }
@@ -33,6 +35,8 @@ nav{
         }
         a:hover{
             background:white;
+            -webkit-transition:.2s;
+            -o-transition:.2s;
             transition:.2s;
             color:black !important;
         }
@@ -49,6 +53,8 @@ nav{
     img:hover{
         border:10px solid white;
         cursor:pointer;
+        -webkit-transition:.2s;
+        -o-transition:.2s;
         transition:.2s;
     }
     h2{
@@ -64,6 +70,15 @@ nav{
     h2{
         margin-bottom:2rem;
     }
+    input::-webkit-input-placeholder{
+        font-style: italic;
+    }
+    input:-ms-input-placeholder{
+        font-style: italic;
+    }
+    input::-ms-input-placeholder{
+        font-style: italic;
+    }
     input::placeholder{
         font-style: italic;
     }
@@ -72,6 +87,8 @@ nav{
         margin-right:8px;
     }
     svg:hover{
+        -webkit-transition:.2s;
+        -o-transition:.2s;
         transition:.2s;
         opacity:0.5;
         cursor:pointer;
@@ -108,16 +125,14 @@ footer{
     i:hover{
         cursor:pointer;
         opacity:.3;
+        -webkit-transition:.3s;
+        -o-transition:.3s;
         transition:.3s;
     }
 }
 
 @media screen and (max-width:768px) {
     nav{
-        /*.col-md-6{
-            display:flex;
-            align-items:center;
-        }*/
         font-size:1rem !important;
         h1{
             font-size:1rem !important;
