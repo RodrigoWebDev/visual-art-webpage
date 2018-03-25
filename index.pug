@@ -1,0 +1,83 @@
+doctype html
+head
+    title Visual Art Studio Webpage
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="css/animate.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css")
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    
+body
+    .container-fluid
+        .overlay
+            i.text-light.float-right.close.icon-close
+            img(src="img/1.jpg")
+        header
+            nav.text-light
+                .row
+                    .col-6
+                        h1 
+                         a.text-light(href="#") Visual Art Studio
+                    .col-6.text-right
+                        a.icon 
+                            i(class="icon-arrow-down")
+                    .col-md-12.drop-menu
+                        ul.text-center
+                            li 
+                                a.text-light(href="#") Home
+                            li 
+                                a.text-light(href="#myworks") My Works
+                            li 
+                                a.text-light(href="#about") About
+                            li 
+                                a.text-light(href="#contact") Contact
+            
+        .work#myworks
+            h2.text-center See my Works
+            hr
+            .row
+                .col-md-6
+                    img(src="img/1.jpg")
+                    img(src="img/2.png")
+                    img(src="img/3.jpg")
+                    img(src="img/7.jpg")
+                .col-md-6
+                    img(src="img/4.jpg")
+                    img(src="img/5.jpg")
+                    img(src="img/6.jpg")
+                    img(src="img/8.jpg")
+    
+    .container
+        .row.contact-about
+            .col-md-6.about#about
+                h2.text-center About me
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt reprehenderit, culpa temporibus possimus cumque hic unde tempora repellendus aliquam, minima reiciendis ipsa fugiat, praesentium vitae, saepe ab eveniet quae?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui deserunt reprehenderit, culpa temporibus possimus cumque hic unde tempora repellendus aliquam, minima reiciendis ipsa fugiat, praesentium vitae, saepe ab eveniet quae?
+            .col-md-6.contact#contact
+                h2.text-center Contact me
+                form
+                  .form-group
+                    input(type="email" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Your Name")
+
+                  .form-group
+                    input(type="email" class="form-control rounded-0" id="exampleInputEmail1" placeholder="Yout Email")
+
+                  button(type="submit" class="btn btn-dark float-right rounded-0") Send
+                  i(class="fab fa-instagram")
+                  i(class="fab fa-pinterest")
+
+    footer.bg-dark
+        p.text-center.text-light Developed by          
+            a.text-light(href="https://rodrigowebdev.github.io/devninja.github.io/" target="_blank") Rodrigo Queiroz
+            i(class="fas fa-coffee" style="margin-left:10px")
+                
+    script(src="js/jquery.min.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+    script(src="js/script.js")
+    script(src="js/jquery.min.js")
+    script(src="js/wow.min.js")
+    script new WOW().init();
+        
+    
+                        
+            
