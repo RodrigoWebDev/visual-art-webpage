@@ -1,7 +1,7 @@
 $(function () {
     //Dropdown menu
     let index = 0;
-    $("nav i").click(function () {
+    $("nav .icon").click(function () {
         if ($('.drop-menu').is(':visible')) {
             let svg = $('nav i');
             svg.removeClass('icon-arrow-up');

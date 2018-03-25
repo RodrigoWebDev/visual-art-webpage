@@ -9,16 +9,18 @@ ul{
 
 nav{
     background:rgba(0,0,0,0.8);
-    padding:1rem;
     position:fixed;
     width:100%;
     z-index:1;
     font-size:2rem;
     h1{
         font-size:2rem;
+        padding:10px;
     }
     .icon{
+        display:block;
         cursor:pointer;
+        padding:10px 20px;
         :hover{
             opacity:0.5;
             -webkit-transition:.3s;
@@ -116,7 +118,6 @@ footer{
         margin:0 auto;
         display:block;
         margin-top:1rem;
-        width:80%;
     }
     i{
         font-size:2rem;
